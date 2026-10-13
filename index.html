@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffea — We serve the richest coffee in the city</title>
+  <meta name="description" content="Coffea: café y repostería de especialidad. Pedí online, retirá en tienda y descubrí nuestros granos seleccionados.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Outfit:wght@400;500;600&family=Poppins:wght@400;500;600&family=Reggae+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="/">coffea</a>
+
+      <nav class="header__nav" aria-label="Principal">
+        <ul class="header__nav-list">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#coffee-title">Coffee</a></li>
+          <li><a href="#dessert-title">Bakery</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li class="header__login"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="header__search" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+
+      <details class="header__burger">
+        <summary aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </summary>
+        <nav class="header__burger-panel" aria-label="Menú móvil">
+          <a href="#main">Home</a>
+          <a href="#coffee-title">Coffee</a>
+          <a href="#dessert-title">Bakery</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Login</a>
+          <a href="#">Buscar</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__content">
+        <span class="hero__eyebrow">Welcome</span>
+        <h1 id="hero-title" class="hero__title">We serve the richest coffee in the city!</h1>
+        <p class="hero__text">Granos seleccionados, tostado artesanal y recetas de especialidad para empezar bien el día.</p>
+        <a class="hero__btn" href="#coffee-title">Order Now</a>
+      </div>
+    </section>
+
+    <!-- 3. Categorías -->
+    <section class="categories" aria-label="Categorías">
+      <div class="container">
+        <ul class="categories__list">
+          <li class="categories__item">
+            <span class="categories__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h14a3 3 0 010 6H3z"/><path d="M3 10v7a2 2 0 002 2h10a2 2 0 002-2v-1"/><path d="M6 2v3M10 2v3M14 2v3"/></svg>
+            </span>
+            <span class="categories__label">Hot Coffee</span>
+          </li>
+          <li class="categories__item">
+            <span class="categories__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h16l-1.5 9a2 2 0 01-2 1.7H7.5a2 2 0 01-2-1.7L4 10z"/><path d="M8 10V6a4 4 0 018 0v4"/></svg>
+            </span>
+            <span class="categories__label">Cold Coffee</span>
+          </li>
+          <li class="categories__item">
+            <span class="categories__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18l-2 11H5L3 9z"/><path d="M8 9V5a4 4 0 018 0v4"/></svg>
+            </span>
+            <span class="categories__label">Cup Coffee</span>
+          </li>
+          <li class="categories__item">
+            <span class="categories__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="9" width="16" height="10" rx="2"/><path d="M4 9l8-5 8 5"/></svg>
+            </span>
+            <span class="categories__label">Dessert</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. Our Special Coffee -->
+    <section class="products" aria-labelledby="coffee-title">
+      <div class="container">
+        <h2 id="coffee-title" class="products__title">Our Special Coffee</h2>
+
+        <div class="carousel">
+          <div class="carousel__track">
+
+            <article class="product-card" id="coffee-1">
+              <div class="product-card__media">
+                <img src="assets/img/coffee-1.jpg" alt="Latte art en taza de cerámica blanca" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-coffee-1">
+                  <label for="fav-coffee-1" aria-label="Marcar Lungo coffee como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Lungo coffee</h3>
+              <p class="product-card__desc">Un espresso alargado, suave y aromático, ideal para disfrutar despacio.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="200">200</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product-card" id="coffee-2">
+              <div class="product-card__media">
+                <img src="assets/img/coffee-2.jpg" alt="Espresso servido en taza pequeña" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-coffee-2">
+                  <label for="fav-coffee-2" aria-label="Marcar Espresso como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Espresso</h3>
+              <p class="product-card__desc">Intenso y concentrado, el clásico de siempre en su versión más pura.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="150">150</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product-card" id="coffee-3">
+              <div class="product-card__media">
+                <img src="assets/img/coffee-3.jpg" alt="Cappuccino con espuma de leche" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-coffee-3">
+                  <label for="fav-coffee-3" aria-label="Marcar Cappuccino como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Cappuccino</h3>
+              <p class="product-card__desc">Espresso, leche vaporizada y una capa de espuma cremosa.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="220">220</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product-card" id="coffee-4">
+              <div class="product-card__media">
+                <img src="assets/img/coffee-4.jpg" alt="Mocha con chocolate y crema" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-coffee-4">
+                  <label for="fav-coffee-4" aria-label="Marcar Mocha como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Mocha</h3>
+              <p class="product-card__desc">Espresso, chocolate y leche, coronado con crema batida.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="240">240</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="carousel__arrows">
+            <a class="carousel__arrow carousel__arrow--prev" href="#coffee-1" aria-label="Producto anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+            <a class="carousel__arrow carousel__arrow--next" href="#coffee-4" aria-label="Siguiente producto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Our Special Dessert -->
+    <section class="products" aria-labelledby="dessert-title">
+      <div class="container">
+        <h2 id="dessert-title" class="products__title">Our Special Dessert</h2>
+
+        <div class="carousel">
+          <div class="carousel__track">
+
+            <article class="product-card" id="dessert-1">
+              <div class="product-card__media">
+                <img src="assets/img/dessert-1.jpg" alt="Porción de cheesecake con frutos rojos" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-dessert-1">
+                  <label for="fav-dessert-1" aria-label="Marcar Cheesecake como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Cheesecake</h3>
+              <p class="product-card__desc">Base crocante, relleno cremoso y frutos rojos frescos.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="180">180</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product-card" id="dessert-2">
+              <div class="product-card__media">
+                <img src="assets/img/dessert-2.jpg" alt="Brownie de chocolate con helado" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-dessert-2">
+                  <label for="fav-dessert-2" aria-label="Marcar Brownie como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Brownie</h3>
+              <p class="product-card__desc">Chocolate intenso, textura húmeda y un toque de nuez.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="160">160</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product-card" id="dessert-3">
+              <div class="product-card__media">
+                <img src="assets/img/dessert-3.jpg" alt="Croissant recién horneado" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-dessert-3">
+                  <label for="fav-dessert-3" aria-label="Marcar Croissant como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Croissant</h3>
+              <p class="product-card__desc">Hojaldrado, mantecoso y dorado, horneado todas las mañanas.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="120">120</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product-card" id="dessert-4">
+              <div class="product-card__media">
+                <img src="assets/img/dessert-4.jpg" alt="Muffin de arándanos" loading="lazy" decoding="async" width="334" height="364">
+                <div class="product-card__fav">
+                  <input type="checkbox" id="fav-dessert-4">
+                  <label for="fav-dessert-4" aria-label="Marcar Muffin como favorito">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5C1 9 2.5 5.5 6 5c2-0.3 3.6 1 6 3 2.4-2 4-3.3 6-3 3.5 0.5 5 4 3.5 7.5C19 16.65 12 21 12 21z"/></svg>
+                  </label>
+                </div>
+              </div>
+              <h3 class="product-card__title">Muffin</h3>
+              <p class="product-card__desc">Esponjoso, con arándanos frescos en cada bocado.</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">Rs. <data value="140">140</data></span>
+                <button type="button" class="product-card__btn">Order Now</button>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="carousel__arrows">
+            <a class="carousel__arrow carousel__arrow--prev" href="#dessert-1" aria-label="Producto anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+            <a class="carousel__arrow carousel__arrow--next" href="#dessert-4" aria-label="Siguiente producto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CTA granos de café -->
+    <section class="promo">
+      <div class="container promo__inner">
+        <img class="promo__side-img promo__side-img--left" src="assets/img/promo-hand.jpg" alt="" loading="lazy" decoding="async">
+        <div>
+          <h2 class="promo__title">Check Out Our Best Coffee Beans</h2>
+          <a class="promo__btn" href="#coffee-title">
+            Explore Our Products
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <img class="promo__side-img promo__side-img--right" src="assets/img/promo-beans.jpg" alt="" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <!-- 7. Testimonios -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <span class="testimonials__eyebrow">Come and Join</span>
+        <h2 id="testimonials-title" class="testimonials__title">Our Happy Customers</h2>
+
+        <div class="testimonials__track">
+          <figure class="testimonial-card" id="t-1">
+            <div class="testimonial-card__header">
+              <img class="testimonial-card__avatar" src="https://ui-avatars.com/api/?name=James+Smith&background=E2D9C8&color=30261C&size=112" alt="" loading="lazy" decoding="async">
+              <figcaption>
+                <p class="testimonial-card__name">James Smith</p>
+                <p class="testimonial-card__role">Entrepreneur</p>
+              </figcaption>
+              <span class="testimonial-card__rating" aria-label="5 de 5 estrellas">★★★★★</span>
+            </div>
+            <blockquote>
+              <p class="testimonial-card__quote">"El mejor café de la ciudad, siempre fresco y el equipo es muy amable. Se nota la dedicación en cada detalle."</p>
+            </blockquote>
+          </figure>
+
+          <figure class="testimonial-card testimonial-card--featured" id="t-2">
+            <div class="testimonial-card__header">
+              <img class="testimonial-card__avatar" src="https://ui-avatars.com/api/?name=Marisa+Gomez&background=E2D9C8&color=30261C&size=112" alt="" loading="lazy" decoding="async">
+              <figcaption>
+                <p class="testimonial-card__name">Marisa Gómez</p>
+                <p class="testimonial-card__role">Diseñadora</p>
+              </figcaption>
+              <span class="testimonial-card__rating" aria-label="5 de 5 estrellas">★★★★★</span>
+            </div>
+            <blockquote>
+              <p class="testimonial-card__quote">"Vengo todas las semanas. El ambiente es cálido y los postres acompañan perfecto al café."</p>
+            </blockquote>
+          </figure>
+
+          <figure class="testimonial-card" id="t-3">
+            <div class="testimonial-card__header">
+              <img class="testimonial-card__avatar" src="https://ui-avatars.com/api/?name=Juan+Perez&background=E2D9C8&color=30261C&size=112" alt="" loading="lazy" decoding="async">
+              <figcaption>
+                <p class="testimonial-card__name">Juan Pérez</p>
+                <p class="testimonial-card__role">Estudiante</p>
+              </figcaption>
+              <span class="testimonial-card__rating" aria-label="4 de 5 estrellas">★★★★☆</span>
+            </div>
+            <blockquote>
+              <p class="testimonial-card__quote">"Buen lugar para estudiar con wifi y un cappuccino. Lo recomiendo siempre."</p>
+            </blockquote>
+          </figure>
+        </div>
+
+        <nav class="testimonials__dots" aria-label="Paginador de testimonios">
+          <a href="#t-1" aria-label="Ver testimonio de James Smith"></a>
+          <a href="#t-2" aria-label="Ver testimonio de Marisa Gómez"></a>
+          <a href="#t-3" aria-label="Ver testimonio de Juan Pérez"></a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 8. Newsletter -->
+    <section class="newsletter">
+      <img class="newsletter__beans newsletter__beans--left" src="assets/img/newsletter-beans.jpg" alt="" loading="lazy" decoding="async">
+      <img class="newsletter__beans newsletter__beans--right" src="assets/img/newsletter-beans.jpg" alt="" loading="lazy" decoding="async">
+      <div class="container">
+        <h2 class="newsletter__title">Join in and get 15% off!</h2>
+        <p class="newsletter__subtitle">Suscribite y enterate primero de nuestras novedades y promociones.</p>
+
+        <form class="newsletter__form" action="#" method="post">
+          <div class="newsletter__field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+            <label class="visually-hidden" for="newsletter-email">Correo electrónico</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Tu email" required autocomplete="email">
+          </div>
+          <button type="submit" class="newsletter__submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__logo">Coffea</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Privacy">
+          <h2>Privacy</h2>
+          <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Services">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Plans &amp; pricing</a></li>
+            <li><a href="#">Sell your products</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="About us">
+          <h2>About us</h2>
+          <ul>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Information">
+          <h2>Information</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2>Social media</h2>
+          <div class="footer__social">
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h3l-7.5 8.6L22 22h-6.3l-5-6.5L5 22H2l8-9.1L2 2h6.4l4.5 6 5.1-6z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-9h3l1-4h-4V7a1.5 1.5 0 011.5-1.5H17V2h-2.5A4.5 4.5 0 0010 6.5V9H7v4h3v9z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 110 3.5a2.5 2.5 0 014.98 0zM.5 8.75h4.96V23H.5zM9 8.75h4.76v1.96h.07c.66-1.25 2.28-2.56 4.69-2.56 5.02 0 5.95 3.3 5.95 7.59V23h-4.96v-6.4c0-1.52-.03-3.48-2.12-3.48-2.13 0-2.45 1.66-2.45 3.37V23H9z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: var(--space-6); font-size: var(--fs-xs); opacity: 0.7;">© 2026 Coffea. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

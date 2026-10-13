@@ -1,0 +1,35 @@
+@layer layout {
+  .container {
+    width: 100%;
+    max-width: var(--container);
+    margin-inline: auto;
+    padding-inline: var(--space-4); /* 16px en base (360-767px) */
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding-inline: var(--space-5); /* 32px aprox en md */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-inline: var(--space-7); /* 48px aprox en lg */
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      padding-inline: 0; /* a xl el container ya mide 1444px centrado */
+    }
+  }
+
+  main {
+    display: block;
+  }
+
+  /* Franjas de ancho completo que contienen un .container adentro */
+  .section {
+    width: 100%;
+  }
+}

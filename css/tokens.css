@@ -1,0 +1,56 @@
+@layer tokens {
+  :root {
+    /* ===== Colores ===== */
+    --color-espresso: #30261C;
+    --color-maroon: #2A0000;
+    --color-sand: #E2D9C8;
+    --color-sand-20: rgba(226, 217, 200, 0.2);
+    --color-sand-40: rgba(226, 217, 200, 0.4);
+    --color-bg: #F1F0EE;
+    --color-muted: #544A3E;
+    --color-border-soft: rgba(48, 38, 28, 0.1);
+    --color-text-soft: rgba(48, 38, 28, 0.7);
+    --color-white: #FFFFFF;
+    /* No publicado en el Figma como variable; placeholder dorado estándar
+       para rating de 5 estrellas. Confirmar valor exacto contra el SVG original. */
+    --color-star: #E2B33C;
+
+    /* ===== Tipografía ===== */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-ui: 'Poppins', sans-serif;
+    --font-accent: 'Reggae One', cursive;
+
+    /* Escala tipográfica (fluida con clamp para mobile-first) */
+    --fs-hero: clamp(2.5rem, 1.5rem + 3.5vw, 4.5rem);
+    --fs-h2: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+    --fs-cta: clamp(1.75rem, 1.4rem + 1.2vw, 2.5rem);
+    --fs-card-title: clamp(1.5rem, 1.2rem + 1vw, 2.375rem);
+    --fs-logo: 2rem;
+    --fs-footer-h: 1.5rem;
+    --fs-lg: 1.25rem;
+    --fs-md: 1.125rem;
+    --fs-base: 1rem;
+    --fs-sm: 0.875rem;
+    --fs-xs: 0.75rem;
+
+    /* ===== Forma y espacio ===== */
+    --radius-pill: 100px;
+    --radius-card: 18px;
+    --radius-img: 12px;
+    --radius-btn: 8px;
+    --container: 1444px;
+
+    --space-1: 0.25rem;  /* 4px */
+    --space-2: 0.5rem;   /* 8px */
+    --space-3: 0.75rem;  /* 12px */
+    --space-4: 1rem;     /* 16px */
+    --space-5: 1.5rem;   /* 24px */
+    --space-6: 1.75rem;  /* 28px */
+    --space-7: 2.5rem;   /* 40px */
+    --space-8: 3.5rem;   /* 56px */
+
+    /* Transiciones */
+    --transition-base: 200ms ease;
+  }
+}
